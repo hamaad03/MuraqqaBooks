@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<HTML>
+
+<head>
+    <meta charset="uft-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MuraqqaBooks </title>
+
+
+</head>
+
+<link rel="stylesheet" href="CSS/muraqqa_style.css" />
+<script src="jsforpay.js"></script>
+
+
+
+<body>
+    <h1> MuraqqaBooks</h1>
+    <h2> - Independent Muslim Booksellers - </h2>
+    <hr />
+    <div class = "searchbar" >
+        <button class = "button" onclick="window.location.href = 'index.html'; "> Home</button>
+        <button class="button"> About Us</button>
+        <button class="button"> Contact Us</button>
+        <input  type="text" placeholder = "Search...">
+        <button class="button"> <img src="Images/search" alt="search" width="10" height="10"/></button>
+        </div>
+ 
+   
+    <hr />
+    <h3> Pay Here</h3>
+    <hr />
+    
+    <div class="row">
+        <div class="Column" style="background-color:rgb(211, 184, 77) ;">
+            <h4>Credit/ Debit Card </h4>
+    <img src="Images/MClogo.jpg" class = "image">
+    
+            <form >
+                <label for="card" >Card Number:</label>
+                <input type="text" id="card" name = "card" required> <br>
+
+
+                <select id="expiry_month" name = "expiry_month" required>
+                    <label for="expiry_month" for="expiry_year" > Card Expiration Date: </label>
+                    <label for="expiry_month">Expiry Month</label> <br>
+                    <option for="expiry_month " value=" -1" >Month</option>
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id = "expiry_year" name="expiry_year" required >
+                    <label for="expiry_year">Expiry Year</label> <br>
+                    <option for="expiry_year" value="-1" > Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+                <br>
+                <label for="CVV">CVV Code:</label>
+                <input type="text" id="CVV" name="CVV" required>
+                <h5>3-4 Digit Code  on back of card</h5>
+                <button type="submit" id="submit" class="button"> OK </button>
+            </form>
+        </div>
+    </div>
+
+
+    <hr />
+    <h5>© 2023, MurraqaBooks</h5>
+  
+ </body>
+
+</HTML>
